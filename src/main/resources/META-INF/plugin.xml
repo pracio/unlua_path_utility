@@ -16,4 +16,12 @@
         <listener class="com.github.pracio.unluapathutility.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
+    <actions>
+        <action id="Unlua.CopyLuaRequirePath"
+                class="com.github.pracio.unluapathutility.action.CopyLuaRequirePathAction"
+                text="Copy Lua Require Path">
+
+        </action>
+    </actions>
 </idea-plugin>
