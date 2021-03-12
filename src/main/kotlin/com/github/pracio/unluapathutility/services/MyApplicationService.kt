@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.pracio.unluapathutility.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.pracio.unluapathutility.MyBundle
 
 class MyApplicationService {
 
