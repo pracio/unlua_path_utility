@@ -18,10 +18,15 @@
     </applicationListeners>
 
     <actions>
-        <action id="Unlua.CopyLuaRequirePath"
-                class="com.github.pracio.unluapathutility.action.CopyLuaRequirePathAction"
-                text="Copy Lua Require Path">
-
+        <action id="com.github.pracio.unluapathutility.action.CopyLuaRequirePathAction"
+                class="com.github.pracio.unluapathutility.action.CopyLuaRequirePathAction" text="Copy Lua Require Path"
+                description="Convert file path to lua require statement">
+            <add-to-group group-id="EditorTabPopupMenu" anchor="after" relative-to-action="CopyReferencePopup"/>
+        </action>
+        <action id="com.github.pracio.unluapathutility.action.CopyModuleNameAction"
+                class="com.github.pracio.unluapathutility.action.CopyModuleNameAction" text="Copy Get Module Name Path"
+                description="For UMG GetModuleName interface">
+            <add-to-group group-id="EditorTabPopupMenu" anchor="after" relative-to-action="CopyReferencePopup"/>
         </action>
     </actions>
 </idea-plugin>
